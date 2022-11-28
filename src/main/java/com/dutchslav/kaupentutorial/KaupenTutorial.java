@@ -16,6 +16,7 @@ public class KaupenTutorial {
     public static final String MOD_ID = "kaupentutorial";
     private static final Logger LOGGER = LogUtils.getLogger();
 
+    // Very Important Comment
     public KaupenTutorial() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
