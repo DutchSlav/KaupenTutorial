@@ -2,5 +2,8 @@
   "item.kaupentutorial.methamphetamine": "Crystal Methamphetamine",
   "item.kaupentutorial.raw_methamphetamine": "Rauwe Methamphetamine",
 
+  "block.kaupentutorial.methamphetamine_block": "Methamphetamine blok",
+  "block.kaupentutorial.raw_methamphetamine_block": "Rauw methamphetamine blok",
+
   "itemGroup.drug_tab": "Drugs"
 }
