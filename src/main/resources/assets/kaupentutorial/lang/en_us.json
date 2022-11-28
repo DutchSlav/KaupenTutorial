@@ -1,4 +1,6 @@
 {
   "item.kaupentutorial.methamphetamine": "Crystal Methamphetamine",
-  "item.kaupentutorial.raw_methamphetamine": "Raw Methamphetamine"
+  "item.kaupentutorial.raw_methamphetamine": "Raw Methamphetamine",
+
+  "itemGroup.drug_tab": "Drugs"
 }
