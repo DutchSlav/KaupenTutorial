@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "kaupentutorial:block/jumpy_block" }
+  }
+}

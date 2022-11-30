@@ -1,6 +1,7 @@
 package com.dutchslav.kaupentutorial.block;
 
 import com.dutchslav.kaupentutorial.KaupenTutorial;
+import com.dutchslav.kaupentutorial.block.custom.JumpyBlock;
 import com.dutchslav.kaupentutorial.item.ModCreativeModeTab;
 import com.dutchslav.kaupentutorial.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -25,6 +26,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> RAW_METHAMPHETAMINE_BLOCK = registerBlock("raw_methamphetamine_block", () -> new Block(BlockBehaviour.Properties.of(Material.SAND)
             .strength(1f).sound(SoundType.SAND)), ModCreativeModeTab.DRUG_TAB);
+
+    public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block", () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.METAL)
+            .strength(2f).sound(SoundType.METAL)), CreativeModeTab.TAB_DECORATIONS);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
