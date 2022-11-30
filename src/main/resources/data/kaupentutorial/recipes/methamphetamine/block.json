@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "kaupentutorial:methamphetamine_block"
+    }
+  ],
+  "result": {
+    "item": "kaupentutorial:methamphetamine",
+    "count": 9
+  }
+}

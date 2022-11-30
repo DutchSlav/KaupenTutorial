@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,10 +21,10 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, KaupenTutorial.MOD_ID);
 
     public static final RegistryObject<Block> METHAMPHETAMINE_BLOCK = registerBlock("methamphetamine_block", () -> new Block(BlockBehaviour.Properties.of(Material.SAND)
-            .strength(2f)), ModCreativeModeTab.DRUG_TAB);
+            .strength(1f).sound(SoundType.SAND)), ModCreativeModeTab.DRUG_TAB);
 
     public static final RegistryObject<Block> RAW_METHAMPHETAMINE_BLOCK = registerBlock("raw_methamphetamine_block", () -> new Block(BlockBehaviour.Properties.of(Material.SAND)
-            .strength(2f)), ModCreativeModeTab.DRUG_TAB);
+            .strength(1f).sound(SoundType.SAND)), ModCreativeModeTab.DRUG_TAB);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

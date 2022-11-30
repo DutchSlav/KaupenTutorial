@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "kaupentutorial:methamphetamine"
+    }
+  },
+  "result": {
+    "item": "kaupentutorial:methamphetamine_block"
+  }
+}
