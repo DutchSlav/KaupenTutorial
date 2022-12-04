@@ -2,6 +2,7 @@ package com.dutchslav.kaupentutorial.block;
 
 import com.dutchslav.kaupentutorial.KaupenTutorial;
 import com.dutchslav.kaupentutorial.block.custom.JumpyBlock;
+import com.dutchslav.kaupentutorial.block.custom.LightBulbBlock;
 import com.dutchslav.kaupentutorial.item.ModCreativeModeTab;
 import com.dutchslav.kaupentutorial.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -29,6 +30,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> JUMPY_BLOCK = registerBlock("jumpy_block", () -> new JumpyBlock(BlockBehaviour.Properties.of(Material.METAL)
             .strength(2f).sound(SoundType.METAL)), CreativeModeTab.TAB_DECORATIONS);
+
+    public static final RegistryObject<Block> LIGHT_BULB_BLOCK = registerBlock("light_bulb_block", () -> new LightBulbBlock(BlockBehaviour.Properties.of(Material.GLASS)
+            .strength(2f).sound(SoundType.GLASS).lightLevel(state -> state.getValue(LightBulbBlock.LIT) ? 15 : 0)), CreativeModeTab.TAB_DECORATIONS);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

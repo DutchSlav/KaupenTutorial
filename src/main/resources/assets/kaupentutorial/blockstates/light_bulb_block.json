@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=true": { "model": "kaupentutorial:block/light_bulb_on" },
+    "lit=false": { "model": "kaupentutorial:block/light_bulb_off" }
+  }
+}
